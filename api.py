@@ -455,11 +455,13 @@ def api_start(host, port):
 
 
 if __name__ == "__main__":
+    print("第一步")
     parser.add_argument("--host", type=str, default="0.0.0.0")
     parser.add_argument("--port", type=int, default=7861)
     # 初始化消息
     args = None
     args = parser.parse_args()
     args_dict = vars(args)
+    print(args_dict)
     shared.loaderCheckPoint = LoaderCheckPoint(args_dict)
     api_start(args.host, args.port)

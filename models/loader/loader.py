@@ -54,6 +54,7 @@ class LoaderCheckPoint:
         模型初始化
         :param params:
         """
+        print("loader初始化")
         self.model = None
         self.tokenizer = None
         self.params = params or {}
@@ -66,6 +67,8 @@ class LoaderCheckPoint:
         self.ptuning_dir = params.get('ptuning_dir', 'ptuning-v2')
         self.load_in_8bit = params.get('load_in_8bit', False)
         self.bf16 = params.get('bf16', False)
+        print(self)
+        print("loader初始化退出")
 
     def _load_model_config(self, model_name):
 
