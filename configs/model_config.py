@@ -85,28 +85,28 @@ llm_model_dict = {
     },
 
     # 通过 fastchat 调用的模型请参考如下格式
-    "fastchat-chatglm-6b": {
-        "name": "chatglm-6b",  # "name"修改为fastchat服务中的"model_name"
-        "pretrained_model_name": "chatglm-6b",
-        "local_model_path": None,
-        "provides": "FastChatOpenAILLM",  # 使用fastchat api时，需保证"provides"为"FastChatOpenAILLM"
-        "api_base_url": "http://localhost:8000/v1"  # "name"修改为fastchat服务中的"api_base_url"
-    },
-    "fastchat-chatglm2-6b": {
-        "name": "chatglm2-6b",  # "name"修改为fastchat服务中的"model_name"
-        "pretrained_model_name": "chatglm2-6b",
-        "local_model_path": None,
-        "provides": "FastChatOpenAILLM",  # 使用fastchat api时，需保证"provides"为"FastChatOpenAILLM"
-        "api_base_url": "http://localhost:8000/v1"  # "name"修改为fastchat服务中的"api_base_url"
-    },
+    # "fastchat-chatglm-6b": {
+    #     "name": "chatglm-6b",  # "name"修改为fastchat服务中的"model_name"
+    #     "pretrained_model_name": "chatglm-6b",
+    #     "local_model_path": None,
+    #     "provides": "FastChatOpenAILLM",  # 使用fastchat api时，需保证"provides"为"FastChatOpenAILLM"
+    #     "api_base_url": "http://localhost:8000/v1"  # "name"修改为fastchat服务中的"api_base_url"
+    # },
+    # "fastchat-chatglm2-6b": {
+    #     "name": "chatglm2-6b",  # "name"修改为fastchat服务中的"model_name"
+    #     "pretrained_model_name": "chatglm2-6b",
+    #     "local_model_path": None,
+    #     "provides": "FastChatOpenAILLM",  # 使用fastchat api时，需保证"provides"为"FastChatOpenAILLM"
+    #     "api_base_url": "http://localhost:8000/v1"  # "name"修改为fastchat服务中的"api_base_url"
+    # },
 
     # 通过 fastchat 调用的模型请参考如下格式
-    "fastchat-vicuna-13b-hf": {
-        "name": "vicuna-13b-hf",  # "name"修改为fastchat服务中的"model_name"
-        "pretrained_model_name": "vicuna-13b-hf",
+    "fastchat-RWKV-4-Raven-7B-v12-Eng49%-Chn49%-Jpn1%-Other1%-20230530-ctx8192": {
+        "name": "RWKV-4-Raven-7B-v12-Eng49%-Chn49%-Jpn1%-Other1%-20230530-ctx8192",  # "name"修改为fastchat服务中的"model_name"
+        "pretrained_model_name": "RWKV-4-Raven-7B-v12-Eng49%-Chn49%-Jpn1%-Other1%-20230530-ctx8192",
         "local_model_path": None,
         "provides": "FastChatOpenAILLM",  # 使用fastchat api时，需保证"provides"为"FastChatOpenAILLM"
-        "api_base_url": "http://localhost:8000/v1"  # "name"修改为fastchat服务中的"api_base_url"
+        "api_base_url": "http://0.0.0.0:6006/v1"  # "name"修改为fastchat服务中的"api_base_url"
     },
 }
 
